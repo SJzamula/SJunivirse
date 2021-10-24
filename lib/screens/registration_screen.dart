@@ -204,7 +204,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               padding: const EdgeInsets.all(16.0),
                               child: SizedBox(
                                   height: 150,
-                                  child: Image.asset("assets/images/galaxy.jpg",
+                                  child: Image.asset("assets/nwet_logo.jpg",
                                       fit: BoxFit.contain)),
                             ),
                             SizedBox(height: 25),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:sjuniverse/screens/home_screen.dart';
 import 'package:sjuniverse/screens/registration_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -52,14 +53,13 @@ class _LoginScreenState extends State<LoginScreen> {
       controller: passwordController,
       obscureText: true,
 
-      validator: (value){
+      validator: (value) {
         RegExp regex = RegExp(r'^.{8,}$');
         if (value!.isEmpty) {
           return ("Password is required for login");
         }
         {
-          if (!regex.hasMatch(value))
-          {
+          if (!regex.hasMatch(value)) {
             return ("Please Enter Valid Password(Min. 6 Character");
           }
         }
@@ -81,11 +81,16 @@ class _LoginScreenState extends State<LoginScreen> {
         elevation: 5,
         borderRadius: BorderRadius.circular(30),
         child: MaterialButton(
-            color: Colors.redAccent,
+            color: Colors.deepPurple,
             padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-            minWidth: MediaQuery.of(context).size.width,
+            minWidth: MediaQuery
+                .of(context)
+                .size
+                .width,
             onPressed: () {
-              //signIn(emailController.text, passwordController.text);
+              Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => HomeScreen()
+              ));
             },
             child: Text(
               "Login",
@@ -94,21 +99,26 @@ class _LoginScreenState extends State<LoginScreen> {
                   fontSize: 20,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
-            )));
+            )
+        )
+    );
 
-    final buildSingUp =
-    Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-      Text("Don`t have an acсount? "),
-      GestureDetector(
-          onTap: () {
-            Navigator.push(context,
+    final buildSingUp = Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text("Don`t have an acсount? "),
+          GestureDetector(
+              onTap: () {
+                Navigator.push(context,
                 MaterialPageRoute(builder: (context) => RegistrationScreen()));
-          },
-          child: Text(
-            "SignUp",
-            style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
-          )),
-    ]);
+                },
+              child: Text(
+                "SignUp",
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+              )
+          ),
+        ]
+    );
 
     return Scaffold(
         backgroundColor: Colors.white,
@@ -128,7 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               padding: const EdgeInsets.all(16.0),
                               child: SizedBox(
                                   height: 150,
-                                  child: Image.asset("assets/galaxy.jpg",
+                                  child: Image.asset("assets/nwet_logo.jpg",
                                       fit: BoxFit.contain)),
                             ),
                             SizedBox(height: 45),
@@ -144,5 +154,4 @@ class _LoginScreenState extends State<LoginScreen> {
                   ))),
         ));
   }
-
 }

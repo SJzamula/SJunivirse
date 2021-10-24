@@ -1,4 +1,4 @@
-#Tue Oct 12 15:59:53 EEST 2021
-base.0=/home/liubov/git_workspace/SJunivirse/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Sun Oct 24 14:53:27 EEST 2021
+base.0=/home/liubov/AndroidStudioProjects/SJunivirse/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
