@@ -18,7 +18,7 @@ List<DestinationPrinciple> destinations = [
     imageUrl: 'assets/images/intro.jpeg',
     description: 'Короткий огляд всіх подальших семінарів та тренінгів з Принципу',
     activities: [ Activity(
-        imageUrl: ,
+        imageUrl: 'assets/images/intro.jpeg',
         name: 'Вступ',
         type: 'Вступ - це короткий огляд всіх подальших семінарів та тренінгів з Принципу. Роздивимося основоположні ідеї,'
             ' які в подальшому будемо більше розкривати. Також ця тема буде тісно переплітатися з темою щастя.',

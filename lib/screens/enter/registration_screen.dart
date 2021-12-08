@@ -136,7 +136,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         }
         {
           if (!regex.hasMatch(value)) {
-            return ("Please Enter Valid Password(Min. 6 Character");
+            return ("Please Enter Valid Password(Min. 8 Character");
           }
         }
       },
