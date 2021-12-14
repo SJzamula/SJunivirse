@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sjuniverse/screens/courses/principle/introduction/destination_model_p_intro.dart';
-import 'introduction/destination_screen_p_intro.dart';
+import 'package:sjuniverse/screens/courses/principle/destination_model_p.dart';
+import 'destination_screen_p.dart';
 
 class PrincipleCourses extends StatelessWidget {
   @override
@@ -22,16 +22,9 @@ class PrincipleCourses extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () => print('See All'),
-                child: Text(
-                  'See All',
-                  style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w600,
-                    letterSpacing: 1.0,
-                  ),
+                child: Icon(Icons.arrow_forward_sharp,
+                    color: Colors.blue),
                 ),
-              ),
             ],
           ),
         ),

@@ -4,8 +4,6 @@ import 'courses/other_programs/blockchain_courses.dart';
 import 'courses/principle/principle_courses.dart';
 import 'courses/title_my_courses.dart';
 
-
-
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,15 +12,14 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
 
-          TitleMyCurses(title: "My curses", press: () {}),
+          TitleMyCurses(title: "My courses", press: () {}),
           // TitleWithMoreBtn(title: "Theology", press: () {}),
           PrincipleCourses(),
           // TitleWithMoreBtn(title: "Languages", press: () {}),
-          // BlockchainCourses(),
+          BlockchainCourses(),
           // TitleWithMoreBtn(title: "Programming", press: () {}),
         ],
       ),
     );
   }
 }
-
