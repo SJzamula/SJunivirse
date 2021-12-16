@@ -1,6 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:sjuniverse/screens/profile/profile.dart';
+import 'package:sjuniverse/screens/profile/profile_screen.dart';
 import 'body.dart';
 
 class HomeScreen extends  StatefulWidget {
@@ -13,7 +14,7 @@ class HomeScreen extends  StatefulWidget {
 class _MyHomePageState extends State<HomeScreen>{
 final List<Widget> _children = [
   Body(),
-  Profile()
+  ProfileFourPage()
 ];
 
   int index = 0;

@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'screens/enter/login_screen.dart';
+import 'screens/welcome_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,9 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Email and password login',
         theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.deepPurple,
         ),
-        home: LoginScreen(),
+        home: WelcomeScreen(),
     );
   }
 }
